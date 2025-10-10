@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# openmeteo_test.py -- geocode a city, fetch hourly temperature, print nearest-hour temp
 import requests
 from datetime import datetime
 
@@ -44,7 +42,7 @@ def nearest_hour_temp(forecast_json):
     return temps[closest], times[closest]
 
 if __name__ == "__main__":
-    city = "Dallas"  # <<< change this to any city
+    city = "Dallas"  # Sets the city to Dallas 
     print("Geocoding...", city)
     lat, lon, tz = geocode(city)
     print(f" -> {city}: lat={lat}, lon={lon}, timezone={tz}")
