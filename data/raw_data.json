@@ -1,7 +1,7 @@
 {
-    "city": "Los Angeles",
-    "temp": 24.99,
-    "humidity": 54,
-    "timestamp": 1760211735,
-    "fetched_at": 1760211802
+    "city": "Dallas",
+    "temp": 28.07,
+    "humidity": 46,
+    "timestamp": 1760316876,
+    "fetched_at": 1760317089
 }
