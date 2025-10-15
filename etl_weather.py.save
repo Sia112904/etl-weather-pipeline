@@ -3,7 +3,7 @@ import json
 import sys
 from datetime import datetime
 
-API_KEY = "75e12ddfb0c9aec3c6592504756b5874"  # Your API key
+API_KEY = "75e12ddfb0c9aec3c6592504756b5874"  # API key
 
 def fetch_weather(city, start_date, end_date):
     try:
