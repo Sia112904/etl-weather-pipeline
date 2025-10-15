@@ -1,0 +1,64 @@
+import requests
+import json
+import sys
+from datetime import datetime
+
+API_KEY = "75e12ddfb0c9aec3c6592504756b5874"  # Your API key
+
+def fetch_weather(city, start_date, end_date):
+    try:
+        url = f"https://api.weatherapi.com/v1/history.json?key={API_KEY}&q={city}&dt={start_date}"
+        response = requests.get(url)
+        response.raise_for_status()  # Raises error for HTTP errors
+
+        data = response.json()
+
+        # Filter forecast data for the date range if needed
+        start_dt = datetime.strptime(start_date, "%Y-%m-%d")
+        end_dt = datetime.strptime(end_date, "%Y-%m-%d")
+
+        filtered_data = [
+            day for day in data.get('forecast', {}).get('forecastday', [])
+            if start_dt <= datetime.strptime(day['date'], "%Y-%m-%d") <= end_dt
+        ]
+
+        return filtered_data
+
+    except requests.exceptions.HTTPError as http_err:
+        if response.status_code == 401:
+            print("Error: Unauthorized – check your API key.")
+        elif response.status_code == 403:
+            print("Error: Forbidden – your API key might not have access to this endpoint.")
+        else:
+            print(f"HTTP error occurred: {http_err}")
+        return []
+    except requests.exceptions.RequestException as req_err:
+        print(f"Request error occurred: {req_err}")
+        return []
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+        return []
+
+def save_data(data, filepath="data/raw_data.json"):
+    try:
+        with open(filepath, "w") as f:
+            json.dump(data, f, indent=4)
+        print(f"Data saved to {filepath}")
+    except Exception as e:
+        print(f"Error saving data: {e}")
+
+if __name__ == "__main__":
+    # Accept command line parameters: city, start_date, end_date
+    if len(sys.argv) != 4:
+        print("Usage: python etl_weather.py <city> <start_date> <end_date>")
+        sys.exit(1)
+
+    city = sys.argv[1]
+    start_date = sys.argv[2]
+    end_date = sys.argv[3]
+
+    weather_data = fetch_weather(city, start_date, end_date)
+    save_data(weather_data)
+
+exit
+
