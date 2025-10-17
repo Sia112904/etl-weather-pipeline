@@ -1,2 +1,2 @@
-city,temperature,humidity_percent,timestamp,fetched_at
-Dallas,28.07,46,1760316876,1760317089
+city,temp,humidity,timestamp,fetched_at,temp_celsius
+Dallas,28.07,46,1760316876,1760317089,-245.07999999999998
