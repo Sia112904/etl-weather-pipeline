@@ -1,2 +1,2 @@
-city,temp,humidity,timestamp,fetched_at,temperature_avg,datetime
-Dallas,28.07,46,1760316876,1760317089,28.07,2025-10-13 00:54:36
+city,temperature,humidity_percent,timestamp,timestamp_iso,fetched_at,fetched_at_iso
+Dallas,28.07,46,1760316876,2025-10-13 00:54:36+00:00,1760317089,2025-10-13 00:58:09+00:00
