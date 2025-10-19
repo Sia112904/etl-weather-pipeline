@@ -1,0 +1,48 @@
+{
+  "generated_at": "2025-10-19T03:31:43.421140Z",
+  "problems": [],
+  "summaries": {
+    "CSV": {
+      "rows": 1,
+      "columns": [
+        "city",
+        "temperature",
+        "humidity_percent",
+        "timestamp",
+        "timestamp_iso",
+        "fetched_at",
+        "fetched_at_iso"
+      ],
+      "dtypes": {
+        "city": "string",
+        "temperature": "float64",
+        "humidity_percent": "Int64",
+        "timestamp": "Int64",
+        "timestamp_iso": "string",
+        "fetched_at": "Int64",
+        "fetched_at_iso": "string"
+      }
+    },
+    "PARQUET": {
+      "rows": 1,
+      "columns": [
+        "city",
+        "temperature",
+        "humidity_percent",
+        "timestamp",
+        "timestamp_iso",
+        "fetched_at",
+        "fetched_at_iso"
+      ],
+      "dtypes": {
+        "city": "string",
+        "temperature": "float64",
+        "humidity_percent": "Int64",
+        "timestamp": "Int64",
+        "timestamp_iso": "datetime64[ns, UTC]",
+        "fetched_at": "Int64",
+        "fetched_at_iso": "datetime64[ns, UTC]"
+      }
+    }
+  }
+}
