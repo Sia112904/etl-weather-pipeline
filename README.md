@@ -45,3 +45,13 @@ python src/transform.py
 python src/load.py
 python scripts/plot_temperature_trend.py
 ```
+## 📈 Updated Weather Visuals ($timestamp)
+
+###  Temperature Trend
+![Temperature Trend](reports/temperature_trend_v2.png)
+
+###  Humidity Trend
+![Humidity Trend](reports/humidity_trend_v2.png)
+
+###  Weather Overview
+![Weather Overview](reports/weather_overview_v2.png)
