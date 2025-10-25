@@ -11,14 +11,14 @@
 Transformation complete. 
 ## Visuals
 
-Temperature trend  
+###  Temperature Trend
 ![Temperature Trend](reports/temperature_trend_v2.png)
 
-Humidity trend  
-![Humidity Trend](visuals/humidity_trend_polished.png)
+###  Humidity Trend
+![Humidity Trend](reports/humidity_trend_v2.png)
 
-Weather overview (Temperature & Humidity)  
-![Weather Overview](visuals/weather_overview_temp_humidity_polished.png)
+###  Weather Overview
+![Weather Overview](reports/weather_overview_v2.png)
 ## Final Touches ($timestamp)
 
 - Pushed latest scripts in `src/` and `scripts/`
@@ -45,13 +45,6 @@ python src/transform.py
 python src/load.py
 python scripts/plot_temperature_trend.py
 ```
-## 📈 Updated Weather Visuals ($timestamp)
 
-###  Temperature Trend
-![Temperature Trend](reports/temperature_trend_v2.png)
 
-###  Humidity Trend
-![Humidity Trend](reports/humidity_trend_v2.png)
 
-###  Weather Overview
-![Weather Overview](reports/weather_overview_v2.png)
