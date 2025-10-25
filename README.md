@@ -9,3 +9,13 @@
 
 
 Transformation complete. ✅
+## Visuals
+
+Temperature trend  
+![Temperature Trend](visuals/temperature_trend_polished.png)
+
+Humidity trend  
+![Humidity Trend](visuals/humidity_trend_polished.png)
+
+Weather overview (Temperature & Humidity)  
+![Weather Overview](visuals/weather_overview_temp_humidity_polished.png)
