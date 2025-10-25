@@ -54,11 +54,11 @@ python -m scripts.plot_temperature_trend
 ## 6) Architecture (Mermaid)
 ```mermaid
  flowchart LR
-    A[Data Source — API or Raw CSV] -->|raw files| B[Extract — src: extract.py → data/raw]
-    B -->|DataFrame| C[Transform — src: transform.py → data/clean_data.csv or parquet]
-    C -->|rows| D[Load — src: load.py → weather.db]
-    C -->|artifacts| E[Visualize — scripts: plot_temperature_trend.py → reports/temperature_trend.png]
-    C -. optional .-> F[Validate / Log (future)]
+    A[Data Source — API or Raw CSV] -->|raw files| B[Extract — extract.py → data/raw]
+    B -->|DataFrame| C[Transform — transform.py → data/clean_data.csv or parquet]
+    C -->|rows| D[Load — load.py → weather.db]
+    C -->|artifacts| E[Visualize — plot_temperature_trend.py → reports/temperature_trend.png]
+    C -. optional .-> F[Validate or Log — future step]
 ```
 
 ## 7) Status & Next Steps
