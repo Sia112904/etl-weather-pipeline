@@ -12,7 +12,7 @@ Transformation complete.
 ## Visuals
 
 Temperature trend  
-![Temperature Trend](visuals/temperature_trend_polished.png)
+![Temperature Trend](reports/temperature_trend_v2.png)
 
 Humidity trend  
 ![Humidity Trend](visuals/humidity_trend_polished.png)
