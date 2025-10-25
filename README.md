@@ -8,7 +8,7 @@
    pip install -r requirements.txt
 
 
-Transformation complete. ✅
+Transformation complete. 
 ## Visuals
 
 Temperature trend  
