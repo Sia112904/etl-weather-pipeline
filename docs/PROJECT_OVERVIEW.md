@@ -63,7 +63,7 @@ flowchart LR
 
 ## 7) Status & Next Steps
 -  ETL skeleton, cleaning, DB init, first visualization
-- 🔜 Add validation, scheduling (cron/GitHub Actions), richer charts
+-  Add validation, scheduling (cron/GitHub Actions), richer charts
 
 ---
 _Last updated: Oct 25, 2025_
