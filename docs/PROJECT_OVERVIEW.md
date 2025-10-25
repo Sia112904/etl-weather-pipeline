@@ -53,7 +53,7 @@ python -m scripts.plot_temperature_trend
 
 ## 6) Architecture (Mermaid)
 ```mermaid
-fflowchart LR
+ flowchart LR
     A[Data Source — API or Raw CSV] -->|raw files| B[Extract — src: extract.py → data/raw]
     B -->|DataFrame| C[Transform — src: transform.py → data/clean_data.csv or parquet]
     C -->|rows| D[Load — src: load.py → weather.db]
