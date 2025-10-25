@@ -1,15 +1,31 @@
-# Virtual env
-venv/
-# Python artifacts
+# OS
+.DS_Store
+
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
-# Env files
+*.egg-info/
+.venv/
+venv/
 .env
-# OS files
-.DS_Store
-# Editor / IDE
-.vscode/
-.idea/
+
+# Data/Artifacts not meant for source control
+weather.db
+data/raw/
+data/tmp/
+data/interim/
+*.parquet
+*.feather
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log
+
+# Local configs
+*.local.json
+.env.*
